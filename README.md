@@ -4,6 +4,7 @@
 
 ### Author: Errol Vidad
 V.1.0.0 (Pr: https://github.com/Code-Fellows-School-Work/madlib-cli/pull/1)
+V.1.0.1 (Pr: https://github.com/Code-Fellows-School-Work/madlib-cli/pull/2)
 
 ### Links and Resources
 - Back-end server url (when applicable): None
