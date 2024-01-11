@@ -16,7 +16,7 @@ def read_template(file):
         return content
 
 # Used ChatGPT to figure out I can use regex to find the {}
-# Used ChatGPT to figure out re.findall and re.submethod
+# Used ChatGPT to figure out re.findall and re.sub method
 def parse_template(file):
     # takes all instances of {} and converts to tuple
     template = tuple(re.findall(r"\{([A-Za-z0-9 '_]+)\}", file))
@@ -24,7 +24,8 @@ def parse_template(file):
     stripped_template = re.sub(r"\{([A-Za-z0-9 '_]+)\}", '{}', file)
     return stripped_template, template
 
-# print(parse_template(file))  
-
-def merge():
-    pass
+# Used ChatGPT to figure out for loop and .replace method
+def merge(template, tuple):
+    for words in tuple:
+        template = template.replace('{}', str(words), 1)
+    return template
