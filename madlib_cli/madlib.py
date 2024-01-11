@@ -56,3 +56,7 @@ def merge(template, tuple):
     for words in tuple:
         template = template.replace('{}', str(words), 1)
     return template
+
+# From class review, this will also pass the third test
+def merge(stripped_template, parts):
+    return stripped_template.format(*parts)
